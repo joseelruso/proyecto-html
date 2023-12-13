@@ -14,15 +14,18 @@
     <!-- el meta anterior despues de 5 seg te lleva a la pagina sugerida -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
+       
+        
         body {
-            font-family: "Lucida Console", "Courier New", monospace;
-            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
             padding: 0;
             margin: 0;
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+           
         }
 
         header {
-            text-align: center;
+            text-align:center;
         }
 
         ul {
@@ -49,8 +52,9 @@
             background-color: #111;
         }
 
-       
+
         .card {
+            max-width: 100%;
             height: 100%;
             min-width: 10px;
             display: flex;
@@ -58,42 +62,33 @@
             justify-content: center;
             align-items: center;
 
-            height: 300px;
+            height: 350px;
 
 
-            color: var(--defaultBackground);
+            /* color: var(--defaultBackground); */
         }
 
-       er {
-            width: 100%;
-            height: 400px;
-            display: flex;
-            gap: 10px;
-           
+     
 
-        }
+        
+        .container {
 
-        /* .card {
-            min-width: 100px;
-          
-            height: 100%;
-            flex-grow: 1;
-            transition: 0, 5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        } */
 
-        .card.active {
-            flex-grow: 100;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         .container img {
-          
+
             width: 0px;
             flex-grow: 1;
             object-fit: cover;
-            filter: brightness(80%);
-            transition:  .7s ease;
+            filter: brightness(100%);
+            transition: .7s ease;
         }
-        .container img:hover{
+
+        .container img:hover {
             width: 200px;
             opacity: 1;
             filter: brightness(100%);
@@ -104,26 +99,27 @@
         }
 
         .footer {
+
+            
             background-color: #333;
             color: #FFF;
             padding: 10px;
             text-align: center;
             clear: both;
         }
-        .tabla {
-            height: 100%;
-            min-width: 10px;
+
+       
+
+        table {
+           
+            border-collapse: collapse;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            align-items: center; 
-        }
-        table {
-            border-collapse: collapse;
-            border: 2px solid rgb(200, 200, 200);
-            letter-spacing: 1px;
-            font-size: 1.5rem;
-            background-color: #FFF;
+            align-items: center;
+            height: 100%;
+           
+            
         }
 
         td {
@@ -134,7 +130,7 @@
         th {
             border: 1px solid rgb(190, 190, 190);
             padding: 10px 20px;
-            background-color: rgb(162, 162, 162);
+            /* background-color: rgb(162, 162, 162); */
         }
     </style>
 
@@ -160,54 +156,53 @@
         <div class="card active">
 
 
-        <img class="card" src="/assets/img/html1.png" alt="html">
-        <img class="card" src="/assets/img/jscript.png" alt="javascript">
-        <img class="card" src="/assets/img/css.png" alt="css">
-        <img class="card" src="/assets/img/java.png" alt="java">
+            <img class="card" src="/assets/img/html1.png" alt="html">
+            <img class="card" src="/assets/img/jscript.png" alt="javascript">
+            <img class="card" src="/assets/img/css.png" alt="css">
+            <img class="card" src="/assets/img/java.png" alt="java">
+        </div>
     </div>
-    </div>
-    <br>
-    <div class="tabla">
-        <table>
-            <colgroup>
-                <col style="background-color: rgb(207, 207, 207);">
+   
 
-            </colgroup>
+    
+    <table>
+       
+        <tr>
             <th>Habiliddes</th>
             <th>soft</th>
             <th>skill</th>
+        </tr>
+        <tr>
+            <td>pensam analítico</td>
+            <td> resolución problemas</td>
+            <td>creatividad</td>
 
-            <tr>
-                <td>pensam analítico</td>
-                <td> resolución problemas</td>
-                <td>creatividad</td>
-                
 
-            </tr>
-            <tr>
-                <td>habilidades comunicacionales</td>
-                <td> trabajo en equipo</td>
-                <td>adaptabilidad</td>
-                
+        </tr>
+        <tr>
+            <td>habilidades comunicacionales</td>
+            <td> trabajo en equipo</td>
+            <td>adaptabilidad</td>
 
-            </tr>
-            <tr>
-                <td>pensamiento crítico</td>
-                <td> gestión del tiempo</td>
-                <td>aprendizaje continuo</td>
-                
 
-            </tr>
-            <tr>
-                <td>proactivo</td>
-                <td> emptía</td>
-                <td>resilencia</td>
-                
+        </tr>
+        <tr>
+            <td>pensamiento crítico</td>
+            <td> gestión del tiempo</td>
+            <td>aprendizaje continuo</td>
 
-            </tr>
-            
-        </table>
-    </div>
+
+        </tr>
+        <tr>
+            <td>proactivo</td>
+            <td> emptía</td>
+            <td>resilencia</td>
+
+
+        </tr>
+
+    </table>
+  
 
     <footer class="footer">
         <p>Derechos reservados &copy;2023</p>
@@ -216,3 +211,7 @@
 </body>
 
 </html>
+    
+      
+
+   
